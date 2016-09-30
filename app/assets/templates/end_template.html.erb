@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+  <div class="row question-controller">
+    <div class="col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-2 col-xs-offset-1 finish-container">
+      <h2 class="oops" >{{oops}}</h2>
+
+      <div ng-show="legitGame" class="end-score-container">
+        <h2>Score</h2>
+        <div id="scoreContianer"></div>
+      </div>
+
+      <div>
+        <a href="/#/" class="btn btn-primary btn-home"ng-click="ansDc()">
+          Home
+        </a><a href="/#/lightning" ng-show="legitGame" class="btn btn-success btn-replay"ng-click="ansMarvel()">
+          Replay
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

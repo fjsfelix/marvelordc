@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row question-controller">
+    <div class="col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-sm-offset-2 col-xs-offset-1 card-container">
+       
+      <div class="row">
+        <div class="col-md-7">
+          <img ng-src="{{current.id}}.jpg"  class="char-pic"/>
+        </div>
+        <div class="col-md-5 count-and-name">
+          <h2 ng-bind="current.name"></h2>
+          <div class="count-center">
+            <div id="countContianer"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="score-container">
+        <h3>SCORE: {{score}}00</h3>
+      </div>
+      <div>
+        <button class="btn btn-danger btn-marvel"ng-click="ansMarvel()">Marvel</button><button class="btn btn-primary btn-dc"ng-click="ansDc()">DC</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
